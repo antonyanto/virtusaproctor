@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Work</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='wor.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <body>
+      <h1 style="text-align:center;color:#fff;">Daily Work Schedule</h1>
+    <div class="container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 id="datea"></h3>
+              <h1>Heading 1</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 id="date"></h3>
+              <h1>Heading 2</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 id="date"></h3>
+              <h1>Heading 3</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+
+              <h3 id="dates"></h3>
+              <h1>Heading 4</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+<script>
+var a=new Date();
+document.getElementById("date").innerHTML=a.toDateString();
+document.getElementById("dates").innerHTML=a.toDateString();
+</script>
+
+
+  </body>
+</html>

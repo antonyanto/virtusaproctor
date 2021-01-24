@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Instructions to the candidate.</h1>
+       &nbsp; &nbsp;<span>Students are requested to strictly adhere to the following rules. Failing so will result in malpractice and result will be withheld</span>
+        <ol>
+          <li>Candidates must have their id card.</li>
+          <li>No one other than the candidate should be present in the room.
+</li>
+          <li>The candidate should be in a well lit room without any background noise.
+</li>
+          <li>The face should be clearly visible.
+</li>
+          <li>Usage of mobile phones or any other electronic gadgets during the exam is strictly prohibited.
+</li>
+          <li>Do not divert the focus from the screen. Eye movements and physical posture will be monitored and any suspicious activity will be treated as malpractice.</li>
+          <li>A total of 3 warnings will be given to the candidate. The same will be displayed. If the count exceeds 3 then the session will be terminated.
+</li>
+          <li>The microphone and camera should remain on during the entire duration of the exam.
+</li>
+<li>Do not try to communicate to anyone during the exam. Such activities will be recorded.
+</li>
+<li>The candidate should remain online till the end of the exam.
+</li>
+
+        </ol>  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">  I have read all the above instructions in a well versed manner and i am aware of the conditions that will be imposed if found in any sought of malpractise
+        <br>
+        <br>
+  <a href="{{ url_for('dash') }}"> <button type="button" name="button" id="send" class="btn btn-primary">Submit</button></a>
+      </div>
+    
+
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+      $(function(){
+        var button=$("send");
+        button.attr('disabled','disabled');
+        $('vehicle1'.change(function(e)
+        {
+          if(this.checked)
+          {
+            button.removeAttr('disabled');
+
+
+          }
+          else
+          {
+            button.attr('disabled','disabled');
+          }
+        }));
+      });
+
+    </script>
+
+  </body>
+</html>

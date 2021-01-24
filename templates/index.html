@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proctor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='tab.js') }}"></script>
+  </head>
+  <body>
+
+    <header id="back">
+      <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#" id="sw">Proctor</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mr-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contributors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('Register') }}"><button type="button" class="btn btn-primary btn" id="byt">Sign Up</button></a>
+      </li>
+
+
+</nav>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <span id="de2">Intelligent-Edge</span>
+          <br>
+        <span id="de">Efficient Ai Based<br>Proctor</span>
+        <br>
+        <br>
+        <p id="de1">“From Business to Education. A perfect solution to strengthen professional and academic integrity. Don’t let disruptions impair your business or academic continuity.”</p>
+  <a href="{{ url_for('Register') }}"><button type="button" name="button" class="btn btn-primary btn-lg" id="wd">Sign up</button></a>
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='comp.svg') }}" id="cd" alt="">
+
+
+          </div>
+
+
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <strong><p id="asq">Technologies Used</p></strong>
+    <div class="container" id="kio">
+      <div class="row">
+        <div class="col">
+          <img src="{{ url_for('static', filename='html.svg') }}" alt="" id="aq">
+
+        </div>
+
+        <div class="col">
+          <img src="{{ url_for('static', filename='pyt.png') }}" alt="" id="aq">
+
+
+
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='nu.png') }}" alt="" id="aq">
+
+
+
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='aw.png') }}" alt="" id="aq">
+
+
+
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='fgy.png') }}" alt="" id="aq">
+
+
+
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='fire.png') }}" alt="" id="aq">
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="section-services">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="header-section">
+          <h2 class="title">Exclusive Features</h2>
+              <span id="daq">Exam Proctor</span>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada fermentum purus, eu volutpat nisi laoreet id. Phasellus fringilla accumsan metus, at tempor est hendrerit et.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service">
+          <div class="content">
+            <span class="icon">
+              <i><img src="{{ url_for('static', filename='eyes.png') }}" id="saw" alt=""></i>
+
+            </span>
+            <h3 class="title">Eye ball Tracking</h3>
+            <p class="description">This feature ensures that the candidate isn’t deviating his focus from the screen. It helps to monitor whether the candidate indulges in any unfair means while attempting the exam like referring to any alternate resource or looking at someone to get the answers.
+</p>
+
+          </div>
+          <span class="circle-before"></span>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service">
+          <div class="content">
+            <span class="icon">
+            <i><img src="  {{ url_for('static', filename='obj.png') }}" id="saw" alt=""></i>
+
+            </span>
+            <h3 class="title">Object detection</h3>
+            <p class="description">This feature helps to recognize if someone else other than the candidate is present in the room. It can detect  objects like mobile phones, headsets etc which  are not permitted during the examination.
+</p>
+
+          </div>
+          <span class="circle-before"></span>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service">
+          <div class="content">
+            <span class="icon">
+              <i><img src="{{ url_for('static', filename='mo.png') }}" id="saw" alt=""></i>
+
+            </span>
+            <h3 class="title">Mouth Tracking</h3>
+            <p class="description">This feature monitors if the candidate is speaking/ communicating with someone else during the examination.</p>
+
+          </div>
+          <span class="circle-before"></span>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service">
+          <div class="content">
+            <span class="icon">
+  <i><img src="{{ url_for('static', filename='headface.png') }}" id="saw" alt=""></i>
+
+            </span>
+            <h3 class="title">Face spoofing.
+</h3>
+            <p class="description">The feature detects whether the face detected using the webcam is real or a photograph of the candidate.
+</p>
+
+          </div>
+          <span class="circle-before"></span>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service">
+          <div class="content">
+            <span class="icon">
+          <i><img src="{{ url_for('static', filename='head.png') }}" id="saw" alt=""></i>
+
+            </span>
+            <h3 class="title">Head pose estimation</h3>
+            <p class="description">This feature estimates the posture of the candidate. If the candidate tries to refer to any alternate resource during the examination the change in head pose will be detected , which indicates malpractice.</p>
+
+          </div>
+          <span class="circle-before"></span>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+      <!-- Single Service -->
+      <div class="col-md-6 col-lg-4">
+        <div class="single-service">
+          <div class="content">
+            <span class="icon">
+    <i><img src="{{ url_for('static', filename='speech.png') }}" id="saw" alt=""></i>
+              </span>
+            <h3 class="title">Speech to text and common word detection.</h3>
+            <p class="description">This feature records the voice of the candidate and converts it to text. The same will be compared with the keywords in the question paper. If the words spoken by the candidate match with the key words in the question paper this indicates malpractice.</p>
+
+          </div>
+          <span class="circle-before"></span>
+        </div>
+      </div>
+      <!-- / End Single Service -->
+    </div>
+  </div>
+</section>
+<section class="section-services">
+<div class="container">
+<div class="row justify-content-center text-center">
+  <div class="col-md-10 col-lg-8">
+    <div class="header-section">
+      <h2 class="title">Exclusive Features</h2>
+      <span id="daq">BPO Proctor</span>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada fermentum purus, eu volutpat nisi laoreet id. Phasellus fringilla accumsan metus, at tempor est hendrerit et.</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <!-- Single Service -->
+  <div class="col-md-6 col-lg-4">
+    <div class="single-service">
+      <div class="content">
+        <span class="icon">
+          <i><img src="{{ url_for('static', filename='third.png') }}" id="saw" alt=""></i>
+
+        </span>
+        <h3 class="title">Third party Intervention</h3>
+        <p class="description">Ensures that no one else other than the authorized employee access the data. This feature helps to prevent malpractice like face spoofing where someone else tries to pretend to be the employee. Helps in preventing the data from being accessed by an unauthorized person.
+</p>
+
+      </div>
+      <span class="circle-before"></span>
+    </div>
+  </div>
+  <!-- / End Single Service -->
+  <!-- Single Service -->
+  <div class="col-md-6 col-lg-4">
+    <div class="single-service">
+      <div class="content">
+        <span class="icon">
+        <i><img src="{{ url_for('static', filename='mobil.jpg') }}" id="saw" alt=""></i>
+
+        </span>
+        <h3 class="title">Mobile & Camera  Detection</h3>
+        <p class="description">Detects the presence of restricted items like Mobile phone, camera etc. which can be used to capture the data. These devices can be misused by the employee to capture the data and send it to some unauthorized person which can compromise the data security.
+</p>
+
+      </div>
+      <span class="circle-before"></span>
+    </div>
+  </div>
+  <!-- / End Single Service -->
+  <!-- Single Service -->
+  <div class="col-md-6 col-lg-4">
+    <div class="single-service">
+      <div class="content">
+        <span class="icon">
+          <i><img src="{{ url_for('static', filename='usb.png') }}" id="saw" alt=""></i>
+
+        </span>
+        <h3 class="title">USB Storage Detection</h3>
+        <p class="description">Checks if any external storage device like pen drive is connected to the device which can be used to store the copy of the data. The external storage devices can be used to to copy the data from the system and can be transferred to anyone outside the organization.</p>
+
+      </div>
+      <span class="circle-before"></span>
+    </div>
+  </div>
+  <!-- / End Single Service -->
+  <!-- Single Service -->
+
+  <!-- / End Single Service -->
+  <!-- Single Service -->
+
+  <!-- / End Single Service -->
+  <!-- Single Service -->
+  <div class="col-md-6 col-lg-4">
+    <div class="single-service">
+      <div class="content">
+        <span class="icon">
+          <i><img src="meta.png" id="saw" alt=""></i>
+        </span>
+        <h3 class="title">Secret Snipper</h3>
+        <p class="description">This feature enables in monitoring every activity of the employee. It can monitor each and every action of the user like applications running in the employees system, screenshots taken during proctoring session. This feature also gives the admin the control over the system like disabling controls and terminating tasks if suspicious activity is detected.</p>
+
+      </div>
+      <span class="circle-before"></span>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="single-service">
+      <div class="content">
+        <span class="icon">
+<i><img src="{{ url_for('static', filename='speech.png') }}" id="saw" alt=""></i>
+
+        </span>
+        <h3 class="title">Speech to text and common word detection.</h3>
+        <p class="description">Recognizes the speech of the user and converts them to text. This helps to detect if the employee tries to communicate any confidential detail with someone during the session. If the words match up with the keywords, this indicated a malpractice.
+</p>
+
+      </div>
+      <span class="circle-before"></span>
+    </div>
+  </div>
+  <!-- / End Single Service -->
+</div>
+</div>
+</section>
+<br>
+<br>
+
+<section ID="saq">
+  <div class="container">
+  <h1 class="heading"><span>meet</span>Our Team</h1>
+
+  <div class="profiles">
+    <div class="profile">
+      <img src="{{ url_for('static', filename='img1.jpeg') }}" class="profile-img">
+
+
+      <h3 class="user-name">Muzammil</h3>
+      <h5>Developer</h5>
+      <p id="whit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p>
+    </div>
+    <div class="profile">
+      <img src="  {{ url_for('static', filename='img2.jpeg') }}" class="profile-img">
+
+
+      <h3 class="user-name">Staffin T</h3>
+      <h5>Developer</h5>
+      <p  id="whit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>
+    </div>
+    <div class="profile">
+      <img src="  {{ url_for('static', filename='ant.jpeg') }}" class="profile-img">
+
+
+      <h3 class="user-name">Antony Raj A</h3>
+      <h5>Developer</h5>
+      <p  id="whit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet!</p>
+    </div>
+  </div>
+  <div class="profiles">
+    <div class="profile">
+      <img src="  {{ url_for('static', filename='dha.jpg') }}" class="profile-img">
+
+
+      <h3 class="user-name">Dhanush S</h3>
+      <h5>Developer</h5>
+      <p  id="whit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p>
+    </div>
+    <div class="profile">
+      <img src="  {{ url_for('static', filename='img5.jpeg') }}" class="profile-img">
+
+
+      <h3 class="user-name">Logith Kumar</h3>
+      <h5>Developer</h5>
+      <p  id="whit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+  </body>
+</html>

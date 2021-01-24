@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Authentication</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script>
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	var firebaseConfig = {
+		apiKey: "AIzaSyCuwZLvFYIXqrO9IhiD_wUYSS6xKz287G4",
+		authDomain: "proctor-96511.firebaseapp.com",
+		projectId: "proctor-96511",
+		storageBucket: "proctor-96511.appspot.com",
+		messagingSenderId: "782036150781",
+		appId: "1:782036150781:web:78d84200dcd02327995194",
+		measurementId: "G-BHS76LQV6Z"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+
+
+</script>
+<script defer src="auth.js"></script>
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form >
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5></h5>
+           		   		<input type="text" id="txtEmail"class="input" placeholder="Username">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5></h5>
+           		    	<input type="password" id="txtPassword" class="input"placeholder="Password">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login" id="login">
+							
+            </form>
+        </div>
+				<p id="message" hidden></p>
+
+    </div>
+
+</body>
+</html>

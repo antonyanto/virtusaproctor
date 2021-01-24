@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}" />
+    <title>Sign in & Sign up Form</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    		 https://firebase.google.com/docs/web/setup#available-libraries -->
+    	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+    <script>
+    	// Your web app's Firebase configuration
+    	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    	var firebaseConfig = {
+    		apiKey: "AIzaSyCuwZLvFYIXqrO9IhiD_wUYSS6xKz287G4",
+    		authDomain: "proctor-96511.firebaseapp.com",
+    		projectId: "proctor-96511",
+    		storageBucket: "proctor-96511.appspot.com",
+    		messagingSenderId: "782036150781",
+    		appId: "1:782036150781:web:78d84200dcd02327995194",
+    		measurementId: "G-BHS76LQV6Z"
+    	};
+    	// Initialize Firebase
+    	firebase.initializeApp(firebaseConfig);
+
+
+
+    </script>
+    <script defer src="{{ url_for('static', filename='auth.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='autha.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" / id="txtEmail">
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" / id="txtPassword">
+            </div>
+            <input type="submit" value="Login" class="btn solid" / id="login">
+            <p class="social-text">Or Sign in with Google</p>
+            <div class="social-media">
+
+
+            <img src="{{ url_for('static', filename='goog.png') }}" id="yu"alt="" style="float:left; border:1px solid #4285F4;"><button onclick="GoogleLogin()" style="width:180px;height:36px;border:none;border-radius:1px;background-color:#4285F4;font-size:15px;transition:0.2s;cursor: pointer;color:#fff;">Sign In With Google</button>
+
+
+
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+      <i class="fas fa-user"></i>
+              <input type="text" placeholder="Name" /  id="txtUser">
+            </div>
+            <div class="input-field">
+      <i class="fas fa-mobile"></i>
+              <input type="text" placeholder="MobileNumber" /  id="txtNumber">
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" /  id="txtmail">
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" / id="txtPass">
+            </div>
+            <input type="submit" class="btn" value="Sign up" / id="signup">
+            <p class="social-text">Or Sign up with Google</p>
+              <div class="social-media">
+              <img src="{{ url_for('static', filename='goog.png') }}" id="yu"alt="" style="float:left; border:1px solid #4285F4;"><button onclick="GoogleLogin()" style="width:180px;height:36px;border:none;border-radius:1px;background-color:#4285F4;font-size:15px;transition:0.2s;cursor: pointer;color:#fff;">Sign In With Google</button>
+              </div>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+              ex ratione. Aliquid!
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="{{ url_for('static', filename='img/log.svg') }}" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              laboriosam ad deleniti.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="{{ url_for('static', filename='img/register.svg') }}" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

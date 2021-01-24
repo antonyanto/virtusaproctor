@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+#byt
+{
+  border-radius:20px;
+  background: #111;
+  border:#111;
+  font-family: 'EB Garamond', serif;
+  font-size: 15px;
+  margin-top:-5px;
+
+}
+nav{
+  font-family: 'Cairo', sans-serif;
+  font-weight: bolder;
+}
+#sw
+{
+  font-size: 70px;
+  color:#ffff;
+  font-weight:bolder;
+}
+#back
+{
+  background-image:url("wave2.svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:340px;
+}
+#cd
+{
+  height:300px;
+}
+#de1
+{
+  font-family: 'Dosis', sans-serif;
+  font-weight:bold;
+  font-size:20px;
+}
+#de
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size:30px;
+}
+#wd
+{
+  border-radius:25px;
+  background: #6c63ff;
+  border: #6c63ff;
+    font-family: 'Dosis', sans-serif;
+}
+#ew
+{
+    font-family: 'Montserrat', sans-serif;
+    margin-top:40px;
+}
+#aq
+{
+  height:47px;
+}
+#aqq
+{
+  height:60px;
+}
+#asq
+{
+  text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-size:20px;
+}
+section-services {
+	font-family: "Poppins", sans-serif;
+	background-color: #6C63FF
+	color: #202020;
+	padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.section-services .header-section {
+	margin-bottom: 34px;
+}
+
+.section-services .header-section .title {
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
+}
+
+.section-services .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #6C63FF;
+    border-radius: 3px;
+}
+
+.section-services .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #504f93;
+    border-radius: 3px;
+}
+
+.section-services .header-section .description {
+	font-size: 14px;
+    color: #282828;
+}
+
+.section-services .single-service {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+.section-services .single-service .content {
+	position: relative;
+	z-index: 20;
+}
+
+.section-services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: #6C63FF;
+    border: 6px solid #504f93;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 10;
+    transition: all .6s;
+}
+
+.section-services .single-service:hover .circle-before {
+	width: 100%;
+	height: 100%;
+	transform: none;
+	border: 0;
+	border-radius: 0;
+	opacity: 1;
+}
+
+.section-services .single-service .icon {
+	display: inline-block;
+	margin-bottom: 26px;
+    width: 70px;
+    height: 70px;
+    background-color:#fff;
+        border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.section-services .single-service:hover .icon {
+	background-color: #fff;
+	color: #6C63FF;
+}
+
+.section-services .single-service .title {
+    margin-bottom: 18px;
+	font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .title {
+	color: #fff;
+}
+
+.section-services .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .description {
+	color: #fff;
+}
+
+.section-services .single-service a {
+	position: relative;
+	font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover a {
+	color: #fff;
+}
+
+.section-services .single-service a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #6C63FF;
+	transition: background-color .3s;
+}
+
+.section-services .single-service:hover a:after {
+	background-color: #fff;
+}
+#saw
+{
+  height:40px;
+}
+#daq
+{
+      font-family: 'Dosis', sans-serif;
+
+}
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+  color:#fff;
+}
+#whit{
+  color: #fff;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+#saq
+{
+  background-color:#7579e7;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Proctor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='master.css') }}">
+
+  </head>
+  <body>
+    <div class="container">
+  <div class="split left">
+    <h1>EXAM PROCTOR</h1>
+    <a href="{{ url_for('instruction') }}" class="button">Start Service</a>
+  </div>
+  <div class="split right">
+    <h1>BPO PROCTOR</h1>
+    <a href="{{ url_for('instructions') }}" class="button">Start Service</a>
+  </div>
+</div>
+    <script src="{{ url_for('static', filename='df.js') }}"></script>
+  </body>
+</html>
