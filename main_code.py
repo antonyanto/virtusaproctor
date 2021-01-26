@@ -286,4 +286,4 @@ if __name__ == '__main__':
     clf = joblib.load('models/face_spoofing.pkl')
     model_initialized = False
 
-    app.run(debug=True)
+    app.run(port=5000)
